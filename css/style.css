@@ -1,0 +1,84 @@
+
+header{
+    background-color: white;
+    width: 5%;
+    height: 100vh;
+    position: relative;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    align-items: center;
+}
+
+header nav div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header nav div a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+    rotate: -90deg;
+    transition: all .5s ease;
+}
+
+header nav div a:hover{
+    color: #f1d4b9;
+}
+
+header nav div svg{
+    cursor: pointer;
+}
+
+
+header div#menu{
+    background-color: white;
+    position: absolute;
+    height: 100%;
+    width: 400px;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+    transform: translateX(-400px);
+    transition: all .2s linear;
+}
+
+header div#menu.active{
+    transform: translateX(0px);
+}
+
+header div#menu svg{
+    cursor: pointer;
+}
+
+header div#menu ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+header div#menu ul li{
+    list-style: none;
+}
+
+header div#menu ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 30px;
+}
