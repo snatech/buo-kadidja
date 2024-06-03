@@ -3,7 +3,7 @@ header{
     background-color: white;
     width: 5%;
     height: 100vh;
-    position: relative;
+    position: fixed;
 }
 
 header nav{
