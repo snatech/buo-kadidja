@@ -10,6 +10,7 @@ main section#slider{
     position: relative;
     width: 100%;
     height: 100vh;
+    background-color: white;
 }
 
 main section#slider div{
@@ -135,6 +136,7 @@ main section#about{
     position: relative;
     height: 120vh;
     width: 100%;
+    background-color: white;
 }
 main section#about div{
     position: relative;
@@ -169,4 +171,123 @@ main section#about img{
     height: 80%;
     width: 50%;
     z-index: 1;
+}
+
+main section#nouveaute{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    overflow-x: hidden;
+    background-color: white;
+}
+
+main section#nouveaute div#scrool{
+    display: flex;
+    background-color: aqua;
+    position: relative;
+    width: 90%;
+}
+
+main section#nouveaute div#scrool div{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 10px; */
+    padding-left: 5px;
+    padding-right: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* transition: transform .3s ease; */
+}
+
+main section#nouveaute div#scrool div img{
+    height: 200px;
+    width: 200px;
+}
+
+main section#nouveaute div#scrool div h5{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+}
+
+main section#nouveaute button{
+    padding: 2px;
+    border: none;
+    background-color: #F9F2E5;
+    border-radius: 50%;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+main section#nouveaute button:last-child{
+    left: 95%;
+}
+
+main section#nouveaute button svg{
+    width: 40px;
+    bottom: 0;
+    background-color: transparent;
+}
+
+main section#nouveaute button svg{
+    width: 40px;
+    bottom: 0;
+    background-color: transparent;
+}
+
+main section#face{
+    position: relative;
+    height: 70vh;
+    z-index: -888888888888;
+    background-color: #D4B99B ;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 40px;
+}
+
+main section#face img{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    bottom: 0;
+    /* left: 0; */
+    /* margin: 0 auto; */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -22222;
+}
+
+main section#face div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    width: 380px;
+    background-color: #F9F2E5;
+}
+
+main section#face div h5{
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+main section#face div h4{
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+main section#face div p{
+    font-size: 14px;
 }

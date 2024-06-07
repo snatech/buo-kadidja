@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 
         <link rel="stylesheet" href="css/menu.css">
-        <link rel="stylesheet" href="css/corps.css">
+        <link rel="stylesheet" href="css/index.css">
         <!-- Bootstrap CSS v5.2.1 -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -65,6 +65,7 @@
                     <img src="images/02162346-7996-4226-bfcf-fc620d205527.jpeg" alt="">
                 </div>
             </section>
+
             <section id="service" class="p-4 d-flex justify-content-center align-items-center">
                 <img src="images/paiementsecurises.webp" alt="">
                 <img src="images/LIVRAISONOFFERTE.webp" alt="">
@@ -80,6 +81,67 @@
                     <p>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam fugiat accusamus eos a dignissimos delectus quis veritatis sint, earum fuga rem quod minima similique rerum odio recusandae eum quae! Facere, quod. Soluta repellat magnam facilis quo veniam neque vel beatae.
                     </p>
+                </div>
+            </section>
+
+            <section id="nouveaute">
+                <h2>NOUVEAUTÉS</h2>
+                <div id="scrool">
+                    <div class="produits">
+                        <img src="images/prod2.webp" alt="">
+                        <h5>Les secrets de Loly Kurl Nectar Leave-in 250 ml</h5>
+                        <h6>12,000f</h6>
+                    </div>
+                    <div class="produits">
+                        <img src="images/prod7.webp" alt="">
+                        <h5>Crazy Locks - Gelocks Noir - Aloe Vera 300ml</h5>
+                        <h6>10,000f</h6>
+                    </div>
+                    <div class="produits">
+                        <img src="images/prod1.webp" alt="">
+                        <h5>Camille Rose Naturals Aloe Whipped Butter Gel 240ml</h5>
+                        <h6>15,000f</h6>
+                    </div>
+                    <div class="produits">
+                        <img src="images/prod3.webp" alt="">
+                        <h5>Kairly Paris Naturalong Mousse Sublim’Curl 150ml</h5>
+                        <h6>10,000f</h6>
+                    </div>
+                    <div class="produits">
+                        <img src="images/prod4.webp" alt="">
+                        <h5>Les secrets de Loly Boost Curl Gelée Capillaire 250 ml</h5>
+                        <h6>14,000f</h6>
+                    </div>
+                    <div class="produits">
+                        <img src="images/prod5.webp" alt="">
+                        <h5>Les Secrets de Loly Smoothie Ananas Lait Capillaire 250 ML</h5>
+                        <h6>16,000f</h6>
+                    </div>
+                    <div class="produits">
+                        <img src="images/prod6.webp" alt="">
+                        <h5>Kairly Paris Naturalong Co-Wash Crème Lavante Douce 250ml</h5>
+                        <h6>12,000f</h6>
+                    </div>
+                </div>
+
+                <button onclick="precedent()" class="position-absolute">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>                      
+                </button>
+                <button onclick="suivant()" class="position-absolute">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="3" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>                      
+                </button>
+            </section>
+
+            <section id="face">
+                <img src="https://senegalbeauty.com/cdn/shop/files/notreconceptsengal_1800x.png?v=1621285980" alt="">
+                <div>
+                    <h5>SENEGAL BEAUTY</h5>
+                    <h4>NOTRE CONCEPT</h4>
+                    <p>Notre vision est de vous offrir un espace unique où trouver tous vos <b>produits de beauté</b> préférés, mais aussi un <b>salon de coiffure.</b></p>
                 </div>
             </section>
         </main>
@@ -100,6 +162,19 @@
             crossorigin="anonymous"
         ></script>
 
+        <!-- javascript interne -->
+        <script>
+            const produits=document.querySelectorAll(".produits")
+            const listePositionsX = [-390, 20, 450, 830, 1240, 1650, 2060]
+            var x=0;
+
+            produits.forEach((produit)=>{
+                produit.style.transform = "translateX("+listePositionsX[x]+"px)"
+                produit.setAttribute("position",x)
+                x++
+            })
+        </script>
+        <!-- javascript externe -->
         <script src="js/main.js"></script>
     </body>
 </html>
