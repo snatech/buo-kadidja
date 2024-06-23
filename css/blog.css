@@ -1,0 +1,83 @@
+main section#blog{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 250px 0 50px;
+    background-color: #f2d3b0fd;
+}
+
+main section#blog div#principal{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 80%;
+}
+
+main section#blog div#principal h2{
+    font-size: 40px;
+    font-weight: 800;
+    max-width: 500px;
+}
+
+main section#blog div#principal nav ul{
+    gap: 40px;
+    padding: 0;
+}
+
+main section#blog div#principal nav ul li{
+    list-style: none;
+    cursor: pointer;
+    transition: color .3s ease;
+}
+
+main section#blog div#principal nav ul li:hover{
+    color: #00000057;
+}
+
+main section#blog div#principal div#blog-div{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+main section#blog div#principal div#blog-div div{
+    position: relative;
+    background-color: white;
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 0 0 60px;
+    height: fit-content;
+    justify-content: center;
+}
+
+main section#blog div#principal div#blog-div div img{
+    width: 560px;
+}
+
+main section#blog div#principal div#blog-div div span{
+    width: 80%;
+    height: 2px;
+    background-color: #00000041;
+}
+
+main section#blog div#principal div#blog-div div p,
+main section#blog div#principal div#blog-div div h3{
+    width: 80%;
+}
+
+main section#blog div#principal div#blog-div div svg{
+    width: 30px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+main section#blog div#principal div#blog-div div svg.active{
+    color: red;
+    fill: red;
+}
