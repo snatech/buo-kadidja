@@ -38,7 +38,7 @@ main section#soins div#div-1 div.row div{
 
 main section#soins div#div-1 div.row div:hover{
     transform: translate(-10px, -20px);
-    box-shadow: 10px 20px 2px #00000040
+    box-shadow: 10px 20px 2px #00000040;
 }
 
 main section#soins div#div-1 div.row div img{

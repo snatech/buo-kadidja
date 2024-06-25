@@ -33,8 +33,10 @@ header nav div a:hover{
     color: #f1d4b9;
 }
 
-header nav div svg{
+header nav div a svg{
     cursor: pointer;
+    rotate: 90deg;
+
 }
 
 
@@ -92,6 +94,12 @@ main {
     left: 5%;
     width: 95%;
     /* display: none; */
+}
+
+/* carte */
+main section#carte{
+    height: 400px;
+    padding-bottom: 50px;
 }
 
 /* footer */

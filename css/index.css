@@ -153,7 +153,7 @@ main section#nouveaute div#scrool div{
     position: absolute;
     top: 0;
     left: 0;
-    /* transition: transform .3s ease; */
+    /* transition: transform .5s ease; */
 }
 
 main section#nouveaute div#scrool div img{
@@ -167,6 +167,7 @@ main section#nouveaute div#scrool div h5{
     font-weight: 700;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 2px;
+    width: 80%;
 }
 
 main section#nouveaute button{
